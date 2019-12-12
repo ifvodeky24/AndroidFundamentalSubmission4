@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/cv_movie"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_poster_movie"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/poster_picture"
+            tools:src="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_title_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/iv_poster_movie"
+            android:layout_toRightOf="@id/iv_poster_movie"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/coloBlack"
+            tools:text="Judul" />
+
+        <TextView
+            android:id="@+id/tv_release_date_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_movie"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_toEndOf="@id/iv_poster_movie"
+            android:layout_toRightOf="@id/iv_poster_movie"
+            android:maxLines="5"
+            tools:text="Tanggal Rilis"
+            android:textColor="@color/coloBlack"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/rb_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:isIndicator="true"
+            android:numStars="10"
+            android:rating="4.4"
+            android:stepSize="0.1"
+            android:theme="@style/RatingBar"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_toEndOf="@id/iv_poster_movie"
+            android:layout_toRightOf="@id/iv_poster_movie"
+            android:layout_below="@+id/tv_release_date_movie"/>
+
+        <TextView
+            android:id="@+id/tv_rb_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:padding="2dp"
+            android:text="4.3"
+            android:textColor="@color/colorWhite"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_toEndOf="@id/iv_poster_movie"
+            android:layout_toRightOf="@id/iv_poster_movie"
+            android:layout_below="@+id/rb_movie"/>
+
+        <TextView
+            android:id="@+id/tv_description_movie"
+            android:layout_width="195dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_rb_movie"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_toEndOf="@id/iv_poster_movie"
+            android:layout_toRightOf="@id/iv_poster_movie"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/coloBlack"
+            tools:text="@string/description" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

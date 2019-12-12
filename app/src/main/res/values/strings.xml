@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+
+    <string name="change_language_settings">Ubah Pengaturan Bahasa</string>
+    <string name="genre">Jenis:</string>
+    <string name="release_date">Tanggal Rilis:</string>
+    <string name="description">Deskripsi:</string>
+    <string name="poster_picture">Gambar Poster</string>
+    <string name="data_favorite_movie_kosong">Data Favorite Movie Kosong</string>
+    <string name="data_favorite_tv_show_kosong">Data Favorite Tv Show Kosong</string>
+    <string name="tambah_ke_favorite">Tambah ke Favorite</string>
+    <string name="_4_3">4.3</string>
+    <string name="gambar_data_kosong">Data Kosong</string>
+    <string name="gambar_ikon_ubah_bahasa">ikon ubah bahasa</string>
+    <string name="navigasi">Navigasi</string>
+    <string name="movie">Movie</string>
+    <string name="tv_show">TV Show</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting">Pengaturan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
